@@ -85,6 +85,7 @@ def alreadyAdded(D, B, comp, title, d, toVisit):
             if dd['title'] == title:
                     if int(d) < int(dd['date']):
                         dd['date'] = d 
+                        dd['link'] = toVisit
     else:
         D[comp] = []
         addToDic(D, B, comp, title, d, toVisit)
